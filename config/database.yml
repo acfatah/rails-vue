@@ -20,6 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: rails
+  password: <%= ENV['PSQL_PASSWORD'] %>
 
 development:
   <<: *default
@@ -81,5 +83,3 @@ test:
 production:
   <<: *default
   database: rails_vue_production
-  username: rails_vue
-  password: <%= ENV['RAILS_VUE_DATABASE_PASSWORD'] %>
