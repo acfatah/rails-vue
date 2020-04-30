@@ -1,24 +1,7 @@
-# README
+# Ruby on Rails with Vue and Turbolinks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails application with Vue and Turbolinks. This rails application uses
+PostgreSQL database.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The database user is `rails` and the password obtained from `ENV['PSQL_PASSWORD']`
+environmental variable.
